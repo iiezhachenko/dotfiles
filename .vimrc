@@ -35,7 +35,7 @@ set hlsearch        " highlight matches
 set foldenable          " enable folding 
 set foldlevelstart=10   " open most folds by default
 set foldnestmax=10      " 10 nested fold max
-set foldmethod=indent   " fold based on indent level
+set foldmethod=syntax   " fold based on indent level
 
 " PLUGINS
 execute pathogen#infect()
@@ -53,7 +53,8 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-let g:syntastic_loc_list_height=5
+let g:syntastic_check_on_q = 0
+let g:syntastic_loc_list_height=1
 " RSpec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>

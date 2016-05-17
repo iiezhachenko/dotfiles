@@ -4,6 +4,7 @@ nnoremap <Leader>o :CtrlP<CR>
 nnoremap <Leader>nt :NERDTree<CR>
 nnoremap <Leader>w :w<CR>
 nmap <Leader><Leader> V
+imap jj <Esc>
 " MISC
 set nocompatible      " We're running Vim, not Vi!
 filetype on           " Enable filetype detection
@@ -46,8 +47,6 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_ruby_checkers          = ['rubocop', 'mri']
-let g:syntastic_ruby_rubocop_exec      = '/Users/iiezhachenko/.rbenv/shims/rubocop'
-let g:syntastic_ruby_exec              = "/Users/iiezhachenko/.rvm/versions/2.3.0/bin/ruby"
 let g:syntastyc_debug                  = 1
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1

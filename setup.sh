@@ -9,7 +9,6 @@ REPOS=(
 "https://github.com/kien/ctrlp.vim"
 "https://github.com/vim-scripts/matchit.zip"
 "https://github.com/ddollar/nerdcommenter"
-"https://github.com/ddollar/nerdcommenter"
 "https://github.com/vim-scripts/pry"
 "https://github.com/ervandew/supertab"
 "https://github.com/scrooloose/syntastic"
@@ -23,6 +22,7 @@ REPOS=(
 "https://github.com/kana/vim-textobj-user"
 "https://github.com/jpalardy/vim-slime"
 "https://github.com/benmills/vimux"
+"https://github.com/jgdavey/vim-turbux"
 )
 
 cd $HOME/.vim/bundle || exit

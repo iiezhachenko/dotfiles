@@ -22,6 +22,7 @@ REPOS=(
 "https://github.com/nelstrom/vim-textobj-rubyblock"
 "https://github.com/kana/vim-textobj-user"
 "https://github.com/jpalardy/vim-slime"
+"https://github.com/benmills/vimux"
 )
 
 cd $HOME/.vim/bundle || exit

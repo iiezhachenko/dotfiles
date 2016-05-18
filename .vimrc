@@ -54,8 +54,11 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_check_on_q = 0
 let g:syntastic_loc_list_height=1
-" RSpec.vim mappings
+    " RSpec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+    " Slime
+let g:slime_target = "tmux"
+

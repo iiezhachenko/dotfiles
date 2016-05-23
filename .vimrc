@@ -59,3 +59,5 @@ map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
     " Slime
 let g:slime_target = "tmux"
+    " PlantUML
+nnoremap <F5> :w<CR> :make<CR>

@@ -23,6 +23,7 @@ REPOS=(
 "https://github.com/jpalardy/vim-slime"
 "https://github.com/benmills/vimux"
 "https://github.com/jgdavey/vim-turbux"
+"https://github.com/aklt/plantuml-syntax"
 )
 
 cd $HOME/.vim/bundle || exit

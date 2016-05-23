@@ -12,8 +12,11 @@ filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
 
 " COLORS
-syntax enable       " enable syntax highlighting
-colorscheme badwolf " enable badwolf colorscheme
+syntax enable         " enable syntax highlighting
+set background=light  " setting light settings by default
+let g:solarized_termcolors=256
+colorscheme solarized " enable solarized colorsheme
+" colorscheme badwolf " enable badwolf colorscheme
 
 " TABS AND SPACES
 set tabstop=2       " number of visual spaces per TAB
@@ -61,4 +64,4 @@ map <Leader>a :call RunAllSpecs()<CR>
     " Slime
 let g:slime_target = "tmux"
     " PlantUML
-nnoremap <F5> :w<CR> :make<CR>
+nnoremap <F6> :w<CR> :make<CR>

@@ -28,6 +28,7 @@ set showcmd         " show command in bottom bar
 set cursorline      " highlight current line
 set wildmenu        " visual autocomplete for command menu
 set showmatch       " highlight matching [{()}]
+set colorcolumn=80  " make column 80 visible
 
 " SEARCH
 set incsearch       " search as characters are entered

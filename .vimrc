@@ -3,6 +3,7 @@ let mapleader = "\<Space>"
 nnoremap <Leader>o :CtrlP<CR>
 nnoremap <Leader>nt :NERDTree<CR>
 nnoremap <Leader>w :w<CR>
+nmap <F5> :!rake<CR>
 nmap <Leader><Leader> V
 imap jj <Esc>
 " MISC

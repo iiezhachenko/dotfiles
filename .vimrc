@@ -6,6 +6,7 @@ nnoremap <Leader>w :w<CR>
 nmap <F5> :!rake<CR>
 nmap <Leader><Leader> V
 imap jj <Esc>
+nmap <Leader>' ciw'<C-r>"'jj
 " MISC
 set nocompatible      " We're running Vim, not Vi!
 filetype on           " Enable filetype detection

@@ -83,6 +83,7 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias stradat="ssh ubuntu@ec2-35-156-47-193.eu-central-1.compute.amazonaws.com -i ~/.ssh/my_aws.pem.txt"
+alias up-work="ssh ubuntu@ec2-54-93-165-156.eu-central-1.compute.amazonaws.com -i ~/.ssh/ievgeniezhachenko.pem.txt"
 
 # Enable RBENV
 eval "$(rbenv init -)"

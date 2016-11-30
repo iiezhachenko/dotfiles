@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/ievgen/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -90,4 +90,3 @@ eval "$(rbenv init -)"
 
 # Source additional ENV variables, that shouldn't be commited
 source ~/.zshenvs
-

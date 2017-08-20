@@ -54,6 +54,9 @@ plugins=(autojump git docker gem knife sudo)
 # User configuration
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="$PATH:/usr/local/go/bin"
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -83,10 +86,13 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias stradat="ssh ubuntu@ec2-35-156-47-193.eu-central-1.compute.amazonaws.com -i ~/.ssh/my_aws.pem.txt"
-alias up-work="ssh ubuntu@54.93.199.203 -i ~/.ssh/ievgeniezhachenko.pem.txt"
+alias up-work="ssh ubuntu@54.93.199.203 -i ~/.ssh/ievgeniezhachenko.pem.txt -t 'set -o vi; tmux attach'" 
 
 # Enable RBENV
 eval "$(rbenv init -)"
 
 # Source additional ENV variables, that shouldn't be commited
 source ~/.zshenvs
+
+# Enable vi mode for command line
+# set -o vi

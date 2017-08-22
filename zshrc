@@ -88,6 +88,9 @@ fi
 alias stradat="ssh ubuntu@ec2-35-156-47-193.eu-central-1.compute.amazonaws.com -i ~/.ssh/my_aws.pem.txt"
 alias up-work="ssh ubuntu@54.93.199.203 -i ~/.ssh/ievgeniezhachenko.pem.txt -t 'set -o vi; tmux attach'" 
 
+export RBENV_PATH="$HOME/.rbenv"
+export PATH="$PATH:$RBENV_PATH/bin"
+
 # Enable RBENV
 eval "$(rbenv init -)"
 

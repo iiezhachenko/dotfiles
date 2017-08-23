@@ -48,6 +48,8 @@ set foldmethod=syntax   " fold based on indent level
 execute pathogen#infect()
     " NERDTree
 let g:NERDTreeDirArrows=0 " fix for NERDTree arrows issue
+let g:NERDTreeDirArrowExpandable="+"
+let g:NERDTreeDirArrowCollapsible="~"
     " Syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}

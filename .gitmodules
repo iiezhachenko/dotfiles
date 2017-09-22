@@ -58,3 +58,11 @@
 [submodule "vim/bundle/vim-makeshift"]
 	path = vim/bundle/vim-makeshift
 	url = https://github.com/johnsyweb/vim-makeshift
+
+
+[submodule "vim-base/bundle/ctrlp.vim"]
+	path = vim-base/bundle/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim
+[submodule "vim-base/bundle/gundo.vim"]
+	path = vim-base/bundle/gundo.vim
+	url = https://github.com/sjl/gundo.vim

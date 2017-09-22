@@ -1,0 +1,64 @@
+" VIM Runtime PATH
+set runtimepath=~/.vim-base,$VIMRUNTIME
+
+" Ward off unexpected things
+set nocompatible
+
+" KEYS
+let mapleader = "\<Space>"
+nnoremap <Leader>w :w<CR>
+nmap <Leader><Leader> V
+imap jj <Esc>
+" Map <C-L> (redraw screen) to also turn off search highlighting until the
+" next search
+nnoremap <C-L> :nohl<CR><C-L>
+
+" MISC
+filetype on           " Enable filetype detection
+filetype indent on    " Enable filetype-specific indenting
+filetype plugin on    " Enable filetype-specific plugins
+set visualbell        " Use visual bell instead of beeping
+
+" COLORS
+syntax enable         " enable syntax highlighting
+set background=light  " setting light settings by default
+let g:solarized_termcolors=256
+colorscheme solarized " enable solarized colorsheme
+" colorscheme badwolf " enable badwolf colorscheme
+
+" TABS AND SPACES
+set tabstop=2       " number of visual spaces per TAB
+set softtabstop=2   " number of spaces in tab when editing
+set shiftwidth=2    " number of spaces to use in autoindent
+set expandtab       " tabs are spaces
+set autoindent      " enables atomatic indent copying from previous string
+" Allow backspacing over autoindent, line breaks and start of insert action
+set backspace=indent,eol,start
+
+" UI
+set number          " show line numbers
+set showcmd         " show command in bottom bar
+set cursorline      " highlight current line
+set wildmenu        " visual autocomplete for command menu
+set showmatch       " highlight matching [{()}]
+set colorcolumn=80  " make column 80 visible
+set ruler           " Display the cursor position
+set cmdheight=2     " Set the command window height to 2 lines
+
+" SEARCH
+set incsearch       " search as characters are entered
+set hlsearch        " highlight matches
+set ignorecase      " case insensitive search
+set smartcase       " ^ except when using capital letters
+
+" FOLDING
+set foldenable          " enable folding 
+set foldlevelstart=10   " open most folds by default
+set foldnestmax=10      " 10 nested fold max
+set foldmethod=syntax   " fold based on indent level
+
+" PLUGINS
+execute pathogen#infect()
+" Gundo
+nnoremap <leader>u :GundoToggle<CR> " toggle gundo
+

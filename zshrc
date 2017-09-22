@@ -86,7 +86,10 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias stradat="ssh ubuntu@ec2-35-156-47-193.eu-central-1.compute.amazonaws.com -i ~/.ssh/my_aws.pem.txt"
-alias up-work="ssh ubuntu@54.93.199.203 -i ~/.ssh/ievgeniezhachenko.pem.txt -t 'set -o vi; tmux attach'" 
+alias up-work="ssh ubuntu@54.93.199.203 -i ~/.ssh/ievgeniezhachenko.pem -t 'set -o vi; tmux attach'" 
+
+# VIM Aliases
+alias bim="vim -u ~/.vimrc-base"
 
 export RBENV_PATH="$HOME/.rbenv"
 export PATH="$PATH:$RBENV_PATH/bin"

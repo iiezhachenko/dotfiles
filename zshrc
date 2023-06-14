@@ -97,6 +97,9 @@ export PATH="$PATH:$RBENV_PATH/bin"
 # Enable RBENV
 eval "$(rbenv init -)"
 
+# Enable brew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Source additional ENV variables, that shouldn't be commited
 source ~/.zshenvs
 
